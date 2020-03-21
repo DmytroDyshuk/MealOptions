@@ -12,14 +12,14 @@
     android:layout_marginBottom="8dp">
 
     <com.github.siyamed.shapeimageview.mask.PorterShapeImageView
+        android:id="@+id/ivImage"
         android:layout_width="0dp"
         android:layout_height="match_parent"
         android:layout_weight="1"
         android:layout_margin="8dp"
         android:src="@mipmap/food_berry_drink"
         android:scaleType="centerCrop"
-        app:siShape="@drawable/shape_white_background"
-        />
+        app:siShape="@drawable/shape_white_background"/>
 
     <LinearLayout
         android:layout_width="0dp"
@@ -38,6 +38,7 @@
             android:gravity="center_vertical">
 
             <TextView
+                android:id="@+id/tvTitleFood"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -83,12 +84,13 @@
         </LinearLayout>
 
         <TextView
+            android:id="@+id/tvDescription"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"
             android:textSize="12sp"
             android:textColor="@color/colorLightGray"
-            android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+            android:text="@string/berry_drink"
             android:maxLines="2"
             android:ellipsize="end"
             android:layout_marginTop="8dp"/>

@@ -1,4 +1,8 @@
 <resources>
     <string name="app_name">Meal Options</string>
     <string name="todo">TODO</string>
+    <string name="berry_drink">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</string>
+    <string name="acai_bowl">Açaí, pronounced ah-sigh-EE, comes from the acai berry grown on the acai palm tree in South Amerian rainforests.</string>
+    <string name="meal_3">With claims that acai helps aid in weight loss, brain function, and prevent cancer, it’s easy to get hooked. But are any of these claims true? According to WebMD acai berries have “no known health benefit that’s different from similar fruits.”</string>
+    <string name="meal_4">For starters, unlike many fruits that are high in sugar and low in fat, the acai berry is actually somewhat higher in fat and low in sugar.</string>
 </resources>

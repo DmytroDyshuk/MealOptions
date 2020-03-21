@@ -8,7 +8,7 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 
-class FoodsAdapter(private val values: List<Food>): RecyclerView.Adapter<FoodsAdapter.ViewHolder>() {
+class FoodsAdapter(private val values: List<Food>, private val listener: OnFoodClickListener): RecyclerView.Adapter<FoodsAdapter.ViewHolder>() {
 
     override fun getItemCount() = values.size
 
@@ -17,15 +17,29 @@ class FoodsAdapter(private val values: List<Food>): RecyclerView.Adapter<FoodsAd
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
+        val food = values[position]
+        holder.tvTitleFood?.text = food.title
+        holder.ivImage?.setImageResource(food.icon)
+        holder.tvDescription?.text = food.text
+        holder.itemView.setOnClickListener {
+            listener.onFoodClicked(food)
+        }
 
     }
 
     class ViewHolder(itemView: View): RecyclerView.ViewHolder(itemView) {
-        var textView: TextView? = null
-        var imageView: ImageView? = null
-//        init {
-//            textView = itemView.findViewById(R.id.)
-//            imageView = itemView.findViewById(R.id.)
-//        }
-}
+        var tvTitleFood: TextView? = null
+        var ivImage: ImageView? = null
+        var tvDescription: TextView? = null
+
+        init {
+            tvTitleFood = itemView.findViewById(R.id.tvTitleFood)
+            ivImage = itemView.findViewById(R.id.ivImage)
+            tvDescription = itemView.findViewById(R.id.tvDescription)
+        }
+    }
+
+    interface OnFoodClickListener {
+        fun onFoodClicked(Food: Food)
+    }
 }
