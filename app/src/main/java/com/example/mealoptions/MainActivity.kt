@@ -20,6 +20,7 @@ import kotlinx.android.synthetic.main.activity_main.*
             }
         })
 
+
     }
 
     private fun generateFakeValues(): List<Food> {
