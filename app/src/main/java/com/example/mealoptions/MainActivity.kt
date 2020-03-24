@@ -1,13 +1,17 @@
 package com.example.mealoptions
 
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import kotlinx.android.synthetic.main.activity_main.*
+import kotlinx.android.synthetic.main.item_food_layout.*
+import kotlinx.android.synthetic.main.second_screen.*
 
 
-     class MainActivity : AppCompatActivity() {
+class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -20,6 +24,9 @@ import kotlinx.android.synthetic.main.activity_main.*
             }
         })
 
+        btn_new_screen.setOnClickListener{
+            startActivity(Intent(this, new_screen::class.java))
+        }
 
     }
 
