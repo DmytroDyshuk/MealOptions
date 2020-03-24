@@ -40,6 +40,6 @@ class FoodsAdapter(private val values: List<Food>, private val listener: OnFoodC
     }
 
     interface OnFoodClickListener {
-        fun onFoodClicked(Food: Food)
+        fun onFoodClicked(food: Food)
     }
 }
