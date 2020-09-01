@@ -3,7 +3,6 @@ package com.example.mealoptions
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Adapter
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
@@ -24,7 +23,6 @@ class FoodsAdapter(private val values: List<Food>, private val listener: OnFoodC
         holder.itemView.setOnClickListener {
             listener.onFoodClicked(food)
         }
-
     }
 
     class ViewHolder(itemView: View): RecyclerView.ViewHolder(itemView) {
@@ -33,7 +31,7 @@ class FoodsAdapter(private val values: List<Food>, private val listener: OnFoodC
         var tvDescription: TextView? = null
 
         init {
-            tvTitleFood = itemView.findViewById(R.id.tvTitleFood)
+            tvTitleFood = itemView.findViewById(R.id.tvDescription)
             ivImage = itemView.findViewById(R.id.ivImage)
             tvDescription = itemView.findViewById(R.id.tvDescription)
         }

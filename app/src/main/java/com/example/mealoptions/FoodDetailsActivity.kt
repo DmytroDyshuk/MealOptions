@@ -13,7 +13,5 @@ class FoodDetailsActivity : AppCompatActivity() {
         tvTitleFood.text = food.title
         ivImage.setImageResource(food.icon)
         tvDescription.text = food.text
-
     }
-
 }
