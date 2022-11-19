@@ -1,10 +1,14 @@
-package com.example.mealoptions
+package com.example.mealoptions.ui
 
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.example.db.model.Food
+import com.example.mealoptions.presenter.fragments.FoodDetailsActivity
+import com.example.mealoptions.presenter.fragments.FoodsAdapter
+import com.example.mealoptions.R
 import kotlinx.android.synthetic.main.activity_main.*
 
 
@@ -36,6 +40,5 @@ class MainActivity : AppCompatActivity() {
         }
         return values
     }
-
 
 }

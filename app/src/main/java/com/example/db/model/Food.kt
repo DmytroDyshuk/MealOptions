@@ -1,4 +1,4 @@
-package com.example.mealoptions
+package com.example.db.model
 
 import java.io.Serializable
 

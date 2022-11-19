@@ -5,4 +5,6 @@
     <string name="acai_bowl">Açaí, pronounced ah-sigh-EE, comes from the acai berry grown on the acai palm tree in South Amerian rainforests.</string>
     <string name="meal_3">With claims that acai helps aid in weight loss, brain function, and prevent cancer, it’s easy to get hooked. But are any of these claims true? According to WebMD acai berries have “no known health benefit that’s different from similar fruits.”</string>
     <string name="meal_4">For starters, unlike many fruits that are high in sugar and low in fat, the acai berry is actually somewhat higher in fat and low in sugar.</string>
+
+    <string name="main_title">MEAL OPTIONS</string>
 </resources>

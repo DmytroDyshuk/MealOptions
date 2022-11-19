@@ -1,4 +1,4 @@
-package com.example.mealoptions
+package com.example.mealoptions.presenter.fragments
 
 import android.view.LayoutInflater
 import android.view.View
@@ -6,6 +6,8 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import com.example.db.model.Food
+import com.example.mealoptions.R
 
 class FoodsAdapter(private val values: List<Food>, private val listener: OnFoodClickListener): RecyclerView.Adapter<FoodsAdapter.ViewHolder>() {
 

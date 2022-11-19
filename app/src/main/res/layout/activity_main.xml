@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/colorMainBackground"
-    tools:context=".MainActivity">
+    tools:context=".ui.MainActivity">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -17,7 +17,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/asap_regular"
-            android:text="MEAL OPTIONS"
+            android:text="@string/main_title"
             android:textAppearance="@style/TextAppearance.AppCompat.Large"
             android:layout_marginStart="24dp"
             android:layout_marginTop="20dp"
@@ -32,7 +32,8 @@
             app:layout_constraintBottom_toBottomOf="@+id/tvTitle"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="@+id/tvTitle"
-            app:srcCompat="@drawable/vector_filter_icon" />
+            app:srcCompat="@drawable/vector_filter_icon"
+            android:contentDescription="Settings"/>
 
         <View
             android:id="@+id/vUnderscore"
